@@ -1,0 +1,17 @@
+{
+  "name": "@apirestaurante/contracts",
+  "version": "0.1.0",
+  "description": "Contratos compartidos entre los microservicios",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "publishConfig": { "registry": "https://npm.pkg.github.com" },
+  "repository": "github:ApiRestaurante/ms-contracts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsc -p tsconfig.json --watch --preserveWatchOutput",
+    "prepublishOnly": "pnpm build"
+  },
+  "license": "ISC",
+  "packageManager": "pnpm@10.34.9"
+}
